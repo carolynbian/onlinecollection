@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --ink: #0d1117;
   --ink-2: #171c24;
   --paper: #f3f0e8;
@@ -314,6 +314,8 @@ em { font-style: normal; }
 }
 .operator strong { color: var(--lime); font-weight: 400; }
 .operator em { color: var(--lime); font-style: normal; }
+.project-map { margin-top: 14px; color: var(--muted); font: 10px/1.7 var(--mono); }
+.project-map span { margin-right: 8px; color: var(--ink); border-bottom: 1px solid var(--ink); }
 .data-note {
   margin-top: 14px;
   color: var(--soft);
@@ -686,12 +688,16 @@ em { font-style: normal; }
   .section-title { font-size: 28px; }
   .pain-grid { grid-template-columns: 1fr; }
   .evidence-grid { grid-template-columns: 1fr; }
-  .browser-card .browser img { height: 230px; }
+  .browser-card .browser img { height: auto; object-fit: contain; }
   .arch { padding: 18px; }
   .econ-grid, .result-grid { grid-template-columns: 1fr 1fr; }
   .closing { padding: 72px 0; }
   .closing h2 { font-size: 28px; }
   .decision-cards, .econ-cards { grid-template-columns: 1fr; }
+  .econ-card dl div { flex-wrap: wrap; }
+  .econ-card dt { flex: 1 1 60%; }
+  .econ-card dd { flex: 0 0 auto; }
+  .workflow-head { flex-wrap: wrap; gap: 4px; }
   .workflow-legend { grid-template-columns: 1fr 1fr; }
   .decision-card { padding: 18px; }
   .decision-card h4 { font-size: 19px; }
@@ -811,6 +817,8 @@ em { font-style: normal; }
 .result-grid span,
 .before-after span,
 .econ-card .sell span { font-size: 10px; }
+
+
 
 
 
